@@ -122,7 +122,7 @@ and build open ssl
 $> cd ~/build
 $> tar xvf ~/downloads/openssl-1.1.1t.tar.gz
 $> cd openssl-1.1.1t
-$> ./config --prefix=/home/lesnagy/install/openssl/1.1.1
+$> ./config --prefix=YOUR_HOME_DIR/install/openssl/1.1.1
 $> make
 $> make install
 ```
@@ -175,7 +175,7 @@ Then we can build python
 $> cd ~/build
 $> tar xvf ~/downloads/Python-3.10.11.tgz
 $> cd Python-3.10.11
-$> ./configure --prefix=/home/lesnagy/install/python/3.10.11
+$> ./configure --prefix=YOUR_HOME_DIR/install/python/3.10.11
 $> make
 $> make install
 ```
@@ -209,7 +209,7 @@ proc ModulesHelp { } {
 module-whatis "Python is an interpreted language."
 
 set python_version     3.10.11
-set server_root     /home/lesnagy/install
+set server_root     YOUR_HOME_DIR/install
 set python_install_dir $server_root/python/$python_version
 
 prepend-path PATH $python_install_dir/bin
